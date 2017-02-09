@@ -1,3 +1,11 @@
+<?php
+$quotes = [
+  'Good design is making something intelligible and memorable. Great design is making something memorable and meaningful. - Dieter Rams',
+  'One chord is fine. Two chords are pushing it. Three chords and you&#39;re into jazz - Lou Reed',
+  'The world is a stage, but the play is badly cast. - Oscar Wilde'
+];
+shuffle($quotes);
+?>
 <!doctype html>
 <html class="no-js" lang="">
     <head>
@@ -6,35 +14,15 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <!-- Place favicon.ico in the root directory -->
-
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
-        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body>
-        <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-
-        <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
-
-        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
-
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='https://www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
-        </script>
+      <h1>Ruben Sosa</h1>
+      <img src = "images/IMG_0090.jpg">
+      <h2>About Me</h2>
+      <p>Hi y'all, My name is Ruben Sosa and I just recently graduated from Northeastern University with a degree in Music Business, where I focused on both music recording/technology and ethnomusicology. I interned with and now work for the IT department at the Law School as front-line support. While in high school and college I worked occasionally as a freelance graphic designer, for which I learned, among other things, HTML and CSS. I also took introductory computer science courses at Northeastern. I'm hoping to build skills in development as I think they could give me an opportunity to tie together my different interests.<p>
+      <h1>Quote of the Day</h1>
+      <p><?php echo $quotes[0]?></p>
     </body>
 </html>
