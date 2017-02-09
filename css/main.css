@@ -99,7 +99,8 @@ body {
   font: bold arial, sans-serif;
   color: #fff;
   text-align: justify;
-  margin: 10vw;
+  margin-left: 10vw;
+  margin-right: 10vw;
   text-shadow: 1px 1px 2px grey;
 }
 
